@@ -18,6 +18,11 @@ export default {
 			}
 		},
 		extend: {
+			fontFamily: {
+				'display': ['Poppins', 'system-ui', '-apple-system', 'sans-serif'],
+				'heading': ['Poppins', 'system-ui', '-apple-system', 'sans-serif'],
+				'body': ['Inter', 'system-ui', '-apple-system', 'sans-serif'],
+			},
 			colors: {
 				border: 'hsl(var(--border))',
 				input: 'hsl(var(--input))',
@@ -26,50 +31,41 @@ export default {
 				foreground: 'hsl(var(--foreground))',
 				primary: {
 					DEFAULT: 'hsl(var(--primary))',
-					foreground: 'hsl(var(--primary-foreground))',
-					hover: 'hsl(var(--primary-hover))'
+					foreground: 'hsl(var(--primary-foreground))'
 				},
 				secondary: {
 					DEFAULT: 'hsl(var(--secondary))',
 					foreground: 'hsl(var(--secondary-foreground))'
 				},
-				accent: {
-					DEFAULT: 'hsl(var(--accent))',
-					foreground: 'hsl(var(--accent-foreground))',
-					hover: 'hsl(var(--accent-hover))'
+				destructive: {
+					DEFAULT: 'hsl(var(--destructive))',
+					foreground: 'hsl(var(--destructive-foreground))'
 				},
 				muted: {
 					DEFAULT: 'hsl(var(--muted))',
 					foreground: 'hsl(var(--muted-foreground))'
 				},
+				accent: {
+					DEFAULT: 'hsl(var(--accent))',
+					foreground: 'hsl(var(--accent-foreground))'
+				},
+				popover: {
+					DEFAULT: 'hsl(var(--popover))',
+					foreground: 'hsl(var(--popover-foreground))'
+				},
 				card: {
 					DEFAULT: 'hsl(var(--card))',
-					foreground: 'hsl(var(--card-foreground))',
-					border: 'hsl(var(--card-border))'
+					foreground: 'hsl(var(--card-foreground))'
 				},
-				success: {
-					DEFAULT: 'hsl(var(--success))',
-					foreground: 'hsl(var(--success-foreground))'
-				},
-				destructive: {
-					DEFAULT: 'hsl(var(--destructive))',
-					foreground: 'hsl(var(--destructive-foreground))'
-				}
-			},
-			fontFamily: {
-				heading: 'var(--font-heading)',
-				body: 'var(--font-body)'
+				'surface': 'hsl(var(--color-surface))',
+				'text-primary': 'hsl(var(--color-text))',
+				'text-muted': 'hsl(var(--color-muted))',
 			},
 			boxShadow: {
 				'sm': 'var(--shadow-sm)',
 				'md': 'var(--shadow-md)',
 				'lg': 'var(--shadow-lg)',
-				'xl': 'var(--shadow-xl)'
-			},
-			backgroundImage: {
-				'gradient-hero': 'var(--gradient-hero)',
-				'gradient-accent': 'var(--gradient-accent)',
-				'gradient-card': 'var(--gradient-card)'
+				'glow': 'var(--shadow-glow)',
 			},
 			borderRadius: {
 				lg: 'var(--radius)',

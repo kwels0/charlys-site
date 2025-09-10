@@ -20,7 +20,3 @@ export default defineConfig(({ mode }) => ({
     },
   },
 }));
-
-export default defineConfig({
-  base: process.env.VITE_BASE ?? "/", // "/" for user/org pages, "/<repo>/" for project pages
-});
